@@ -1,0 +1,28 @@
+type Query {
+  locations: LocationsResponse
+  posts: [Post!]!
+}
+
+type LocationsResponse {
+  results: [Location!]!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  content: String!
+  description: String!
+}
+
+type Location {
+  id: ID!
+  name: String!
+}
+
+type Mutation {
+  _empty: String
+}
+
+type Subscription {
+  _empty: String
+}
