@@ -1,0 +1,8 @@
+query locations {
+  locations {
+    results {
+      id
+      name
+    }
+  }
+}
